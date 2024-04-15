@@ -8,37 +8,37 @@ document.getElementById('totalUnite').innerHTML = total + " " + "Unit";
 
 if (total > 0) {
 let u1 = (total < 75 && total > 0) ?  total : 75;
-var tu = u1 * 4.19;
+var tu = u1 * 4.63;
 document.getElementById('unitRate1').innerHTML = u1 + " *" + " 4.00" + " = " + u1 * 4.19 + "Taka";
 }
 if (total > 75) {
 let u2 = (total > 75 && total < 200) ? (total - 75) : 125;
-var tu = tu + (u2 * 5.72);
+var tu = tu + (u2 * 5.26);
 
 document.getElementById('unitRate2').innerHTML = u2 + " *" + " 5.52" + " = " + u2 * 5.72 + "Taka";
 }
 if (total > 200) {
 let u3 = (total > 200 && total < 300) ? (total - 200) : 100;
-var tu = tu + (u3 * 6.00);
+var tu = tu + (u3 * 7.20);
 
 document.getElementById('unitRate3').innerHTML = u3 + " *" + " 6.00" + " = " + u3 * 6 + "Taka";
 }
 if (total > 300) {
 
 let u4 = (total > 300 && total < 400) ? (total - 300) : 100;
-var tu = tu + (u4 * 6.34 );
+var tu = tu + (u4 * 8.02 );
 
 document.getElementById('unitRate4').innerHTML = u4 + " *" + " 6.34" + " = " + u4 * 6.34 + "Taka";
 }
 if (total > 400) {
 let u5 = (total > 400 && total < 600) ? (total - 400) : 200;
-var tu = tu + (u5 * 9.98);
+var tu = tu + (u5 * 12.67);
 
 document.getElementById('unitRate5').innerHTML = u5 + " *" + " 9.98" + " = " + u5 * 9.98 + "Taka";
 }
 if (total > 600) {
-let u6 = (total > 600 ) ? (total - 600) : "Ivilited Number";
-var tu = tu + (u6 * 11.46);
+let u6 = (total > 600 ) ? (total - 600) : "Invilited Number";
+var tu = tu + (u6 * 14.61);
 
 document.getElementById('unitRate6').innerHTML = u6 + " *" + " 11.46" + " = " + u6 * 11.46 + "Taka";
 }
